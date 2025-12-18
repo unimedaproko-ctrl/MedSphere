@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDSphere - Campus Lifestyle Community</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <div class="logo-circle">M</div>
+                    <h1>MEDSphere</h1>
+                </div>
+                <p class="tagline">Your premier campus lifestyle community. Share stories, discover events, and connect with other students on campus!</p>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#blogs"><i class="fas fa-newspaper"></i> Blogs</a></li>
+                    <li><a href="#" id="community-link"><i class="fas fa-users"></i> Community</a></li>
+                    <li><a href="#" id="account-link"><i class="fas fa-user-plus"></i> Create Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <h2>Welcome to MEDSphere</h2>
+                <p>Connect with fellow students, stay updated with campus news, and share your experiences. This is your space to engage with the campus community.</p>
+            </section>
+            
+            <!-- Latest Blog Posts -->
+            <section id="blogs" class="blog-section">
+                <h2><i class="fas fa-newspaper"></i> Latest Updates</h2>
+                <div class="blog-grid">
+                    <article class="blog-card featured">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1523059623039-a9ed027e7fad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="University Campus">
+                            <div class="date-badge">Dec 17, 2025</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Circular on Vacation for Christmas Break</h3>
+                            <p class="blog-meta">Posted by Academic Affairs • 2 hours ago</p>
+                            <p>The University Management has approved a festive holiday for all students of the University. Students are to proceed on festive holiday with effect from Friday, 19th December, 2025...</p>
+                            <a href="#" class="read-more" id="read-circular">Read Full Circular</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Campus Event">
+                            <div class="date-badge">Dec 15, 2025</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Upcoming Campus Health Symposium</h3>
+                            <p class="blog-meta">Posted by Events Committee • 1 day ago</p>
+                            <p>Join us for an insightful symposium on "Advancements in Medical Sciences" featuring guest speakers from the industry. Registration opens next week.</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                    
+                    <article class="blog-card">
+                        <div class="blog-image">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Student Activities">
+                            <div class="date-badge">Dec 12, 2025</div>
+                        </div>
+                        <div class="blog-content">
+                            <h3>Student Council Election Results</h3>
+                            <p class="blog-meta">Posted by Student Affairs • 3 days ago</p>
+                            <p>The results for the 2025 Student Council elections have been announced. Congratulations to all elected representatives!</p>
+                            <a href="#" class="read-more">Read More</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            
+            <!-- Quick Links Section -->
+            <section class="quick-links">
+                <h2><i class="fas fa-link"></i> Quick Links</h2>
+                <div class="links-container">
+                    <a href="index.html" class="quick-link">
+                        <div class="link-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <span>Home</span>
+                    </a>
+                    <a href="#blogs" class="quick-link">
+                        <div class="link-icon">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <span>Blogs</span>
+                    </a>
+                    <a href="#" id="community-quick-link" class="quick-link">
+                        <div class="link-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <span>Community</span>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Circular Modal -->
+    <div id="circular-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>University Festive Holiday Circular</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="circular-document">
+                    <div class="circular-header">
+                        <h3>UNIVERSITY OF MEDICAL SCIENCES, ONDO, ONDO STATE</h3>
+                        <p>OFFICE OF THE REGISTRAR</p>
+                        <p>DIVISION OF ACADEMIC AFFAIRS</p>
+                        <p class="ref">UNIMED/ACAD.A/CIR/30/SM/53</p>
+                        <p class="date">17th December, 2025</p>
+                    </div>
+                    
+                    <div class="circular-body">
+                        <h4>CIRCULAR TO ALL STUDENTS</h4>
+                        <h4>Festive Holiday</h4>
+                        
+                        <p>The University Management has approved a festive holiday for all students of the University.</p>
+                        
+                        <p>In view of the above, students are to proceed on festive holiday with effect from Friday, 19th December, 2025.</p>
+                        
+                        <p>Students are expected to resume back to campus on Sunday, 4th January, 2025, and normal academic activities shall resume immediately upon resumption.</p>
+                        
+                        <p>The University Management wishes all students a Merry Christmas and a Happy New Year in advance. Students are advised to be of good conduct throughout the holiday period and to resume promptly as scheduled.</p>
+                        
+                        <p>Thank you.</p>
+                        
+                        <div class="signature">
+                            <p>Mrs. Margaret O. OLAOLU</p>
+                            <p>SAR, Academic Affairs</p>
+                            <p>For: Ag. Registrar</p>
+                        </div>
+                        
+                        <div class="circular-cc">
+                            <p>CC: Vice-Chancellor</p>
+                            <p>Ag. Registrar</p>
+                            <p>All Deans</p>
+                            <p>File</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Creation Modal -->
+    <div id="account-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Create Your MEDSphere Account</h2>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="account-form">
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Student Email</label>
+                        <input type="email" id="email" placeholder="Enter your university email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="student-id">Student ID</label>
+                        <input type="text" id="student-id" placeholder="Enter your student ID" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="department">Department/Faculty</label>
+                        <select id="department" required>
+                            <option value="">Select your department</option>
+                            <option value="medicine">Medicine</option>
+                            <option value="nursing">Nursing</option>
+                            <option value="pharmacy">Pharmacy</option>
+                            <option value="dentistry">Dentistry</option>
+                            <option value="public-health">Public Health</option>
+                            <option value="med-lab">Medical Laboratory Science</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="interests">Areas of Interest (Select all that apply)</label>
+                        <div class="interests">
+                            <label><input type="checkbox" name="interest" value="academics"> Academics</label>
+                            <label><input type="checkbox" name="interest" value="events"> Campus Events</label>
+                            <label><input type="checkbox" name="interest" value="sports"> Sports</label>
+                            <label><input type="checkbox" name="interest" value="social"> Social Activities</label>
+                            <label><input type="checkbox" name="interest" value="research"> Research</label>
+                            <label><input type="checkbox" name="interest" value="volunteering"> Volunteering</label>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="terms" required>
+                        <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Community Guidelines</a></label>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <div class="logo">
+                    <div class="logo-circle">M</div>
+                    <h2>MEDSphere</h2>
+                </div>
+                <p>Connecting students across campus since 2025</p>
+            </div>
+            <p class="copyright">&copy; 2025 MEDSphere. All rights reserved. <span id="current-date"></span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
